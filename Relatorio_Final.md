@@ -5,7 +5,7 @@
 
 ### **Equipe 1:**
 
-* Lorena Silva Sampaio - 11201212025
+* Lorena Silva Sampaio - 11201812025
 
 * Samira Haddad - 11201812350
 
