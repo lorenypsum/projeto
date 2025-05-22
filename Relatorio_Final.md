@@ -1,36 +1,25 @@
-UNIVERSIDADE FEDERAL DO ABC
+# UNIVERSIDADE FEDERAL DO ABC
 
-PROCESSAMENTO DIGITAL DE IMAGENS
-MEDIVISÃO - Auxílio ao Diagnóstico de Câncer de Pele
+### PROCESSAMENTO DIGITAL DE IMAGENS
+### MEDIVISÃO - Auxílio ao Diagnóstico de Câncer de Pele
 
-Equipe 1:
-Lorena Silva Sampaio - 11201212025
-Samira Haddad - 11201812350
-Larissa Rodrigues de Almeida - 11201812076
-William Fernandes Dias - 11202020043
+### **Equipe 1:**
 
-SANTO ANDRÉ
-2025
+* Lorena Silva Sampaio - 11201212025
 
-SUMÁRIO
-INTRODUÇÃO	3
-Contexto e Cenário de Aplicação	3
-Fundamentação Teórica	4
-MATERIAIS E MÉTODOS	6
-Modelagem Funcional do SPI (MF)	6
-Descrição da implementação do Sistema de Processamento de Imagem (SPI)	8
-Lista dos Arquivos	10
-Análise Técnica	12
-LABORATÓRIO EXPERIMENTAL	13
-Roteiro do Laboratório Experimental	13
-Análise dos Resultados do Teste de Campo TCS	20
-CONCLUSÕES	26
-REFERÊNCIAS BIBLIOGRÁFICAS	28
-ANEXOS	28
-ANEXO A - CÓDIGOS	28
-ANEXO B - ENTREVISTAS	29
+* Samira Haddad - 11201812350
 
-INTRODUÇÃO
+* Larissa Rodrigues de Almeida - 11201812076
+
+* William Fernandes Dias - 11202020043
+
+**Backend-notebook [GitHub]:**  
+https://github.com/samyhad/skin_cancer_detection  
+
+**Aplicação web [GitHub]:**  
+https://github.com/lorenypsum/medivisao 
+
+## INTRODUÇÃO
 Esse projeto é dedicado à detecção precoce de câncer de pele através do uso de técnicas de Processamento Digital de Imagens (PDI) para o tratamento e análise de imagens de lesões cutâneas, com o objetivo de auxiliar na identificação de padrões sugestivos de malignidade.
 
 O objetivo é realizar um tratamento em imagens obtidas com fotografias tiradas com câmera (web-cam) através de técnicas de pré-processamento, as imagens pré-processadas devem então ser submetidas para análise por uma rede neural, construída a partir de treinamento de modelo de aprendizado de máquina.
@@ -47,7 +36,7 @@ Em adição, modelos de redes neurais foram implementadas para a classificação
 
 Assim sendo, o foco inicial deste projeto é demonstrar como as técnicas de processamento digital de imagens podem ser aplicadas eficazmente em imagens de câncer de pele, preparando-as para uma análise mais aprofundada com inteligência artificial. Vale salientar que o tema foi definido após a realização de entrevistas empáticas com pessoas de diversos perfis (em anexo), através das quais detectamos uma necessidade de atuação de processamento digital de imagens na área médica e facilitação de diagnóstico precoce.
 
-Contexto e Cenário de Aplicação
+## Contexto e Cenário de Aplicação
 
 Esse trabalho se dá no contexto médico, na relação médico-paciente em atendimento ambulatorial ou a distância.
 
@@ -66,7 +55,7 @@ O sistema é acessado via interface web, onde profissionais de saúde ou pacient
 - Submeter a foto para análise;
 - Receber um resultado com mapa de calor, porcentagem de probabilidade do diagnóstico ser benigno ou maligno;
 
-Fundamentação Teórica
+## Fundamentação Teórica
 
 O avanço da inteligência artificial tem o potencial de transformar a área da saúde, especialmente em um cenário onde a disponibilidade de profissionais médicos é limitada. No Brasil, a proporção de médicos é de 2,56 por mil habitantes (AGÊNCIA BRASIL, 2023), o que pode dificultar o acesso rápido e eficiente a diagnósticos especializados, especialmente em regiões mais afastadas. Esse número é significativamente menor do que em países como Mônaco, que conta com 7,51 médicos por mil habitantes (WORLD BANK, 2023), demonstrando uma disparidade na distribuição de profissionais da saúde ao redor do mundo.
 
@@ -101,9 +90,9 @@ Para atingir esse objetivo, usamos a biblioteca OpenCV (Open Source Computer Vis
 
 Assim sendo, este projeto utiliza técnicas de processamento digital de imagens e rede neural para desenvolver uma ferramenta que auxilie no diagnóstico precoce do câncer de pele.
 
-MATERIAIS E MÉTODOS
+## MATERIAIS E MÉTODOS
 
-Modelagem Funcional do SPI (MF)
+**Modelagem Funcional do SPI (MF)**
 
 O sistema permite que usuários tirem uma foto com webcam e enviem as imagens de lesões na pele para pré-processamento com as seguintes funções:
 
@@ -121,15 +110,15 @@ O dataset ISIS 2024 foi utilizado para treinar essa rede. Esse dataset foca na d
 
 Adicionalmente, implementamos uma aplicação web para propiciar maior facilidade aos usuários. Apresentamos um fluxograma representando o funcionamento do backend e modelo UML (Unified Modeling Language) do banco de dados.
 
-Back-end (notebook):
+**Back-end (notebook:**
 
 (Figura 1: Fluxograma do processamento no backend)
 
-Banco de dados:
+**Banco de dados:**
 
 (Figura 2: Modelo UML do Banco de Dados)
 
-Descrição da implementação do Sistema de Processamento de Imagem (SPI)
+**Descrição da implementação do Sistema de Processamento de Imagem (SPI)**
 
 Este projeto concentra-se no pré-processamento de imagens de pele utilizando os fundamentos do Processamento Digital de Imagens (PDI) aprendidos na disciplina, com o objetivo de preparar as imagens para análises posteriores, como a aplicação de técnicas de aprendizado de máquina (ML) e redes neurais profundas.
 
@@ -138,7 +127,7 @@ O sistema desenvolvido é composto por duas partes principais:
 - Um notebook Jupyter, que demonstra o pipeline completo de pré-processamento e classificação.
 - Uma aplicação web, que permite a exploração interativa das funcionalidades implementadas.
 
-Técnicas de Pré-Processamento Aplicadas
+**Técnicas de Pré-Processamento Aplicadas**
 
 As etapas de pré-processamento realizadas incluem:
 
@@ -148,7 +137,7 @@ As etapas de pré-processamento realizadas incluem:
 - Segmentação: Separação da região de interesse utilizando métodos como Otsu e Watershed.
 - Operações Morfológicas: Erosão, dilatação, abertura e fechamento para refinamento das máscaras segmentadas.
 
-Implementação da Rede Neural Convolucional (CNN)
+**Implementação da Rede Neural Convolucional (CNN)**
 
 Após o pré-processamento das imagens, foi desenvolvido e treinado um modelo de Rede Neural Convolucional (CNN) para a tarefa de classificação binária das imagens.
 
@@ -171,7 +160,7 @@ O treinamento foi realizado com:
 
 Por fim, o modelo foi avaliado utilizando as métricas do relatório de classificação (*classification report*), demonstrando a eficácia do pipeline completo de pré-processamento e classificação.
 
-Aplicação Web
+## Aplicação Web
 
 A aplicação é acessada através do arquivo `index.html`, podendo ser aberta diretamente no navegador ou executada em um servidor local. Para autenticação, um formulário de login está disponível, utilizando as credenciais:
 
@@ -186,7 +175,7 @@ Há ainda a opção de criação de novos usuários por meio de uma tela de cada
 - Pré-processamento: Exibição detalhada das técnicas aplicadas (segmentação, filtragem e realce).
 - Análise de Imagens: Visualização dos resultados de processamento e classificação.
 
-Lista dos Arquivos
+**Lista dos Arquivos:**
 
 - **Backend-notebook [GitHub]**:  
   https://github.com/samyhad/skin_cancer_detection
@@ -200,7 +189,7 @@ Lista dos Arquivos
 (Figura 3: Imagem da tela de pré-processamento de imagens)  
 (Figura 4: Imagem da tela de análise de imagens)
 
-Análise Técnica
+## Análise Técnica
 
 **Grau de Atendimento ao Cenário Proposto**
 
@@ -223,7 +212,7 @@ Após o treinamento do modelo CNN com as imagens pré-processadas, foram obtidas
 
 (Tabela 1: Resultados dos testes)
 
-Análise Qualitativa
+## Análise Qualitativa
 
 **Pré-processamento**:  
 A aplicação das técnicas de filtragem, segmentação e realce de contraste melhorou visualmente a qualidade das imagens, favorecendo a extração de padrões relevantes pelas camadas convolucionais.
@@ -298,7 +287,7 @@ Embora o sistema ainda não forneça um diagnóstico médico, ele ajuda a identi
 
    Caso deseje salvar o resultado da análise, clique no botão azul escrito “Salvar Resultado”.
 
-Análise dos Resultados do Teste de Campo TCS
+## Análise dos Resultados do Teste de Campo TCS
 
 Durante os testes de campo, 8 usuários testaram o software, realizando o roteiro descrito anteriormente. Após a execução, cada candidato respondeu dois questionários: um para avaliar o experimento e outro para fornecer feedback sobre o sistema.
 
@@ -329,7 +318,7 @@ Além das perguntas de múltipla escolha, o questionário incluiu questões sobr
 
 Portanto, a análise dos resultados do experimento mostra que o sistema cumpre o objetivo de oferecer um diagnóstico rápido e automatizado de malignidade cutânea de forma prática e eficiente.
 
-CONCLUSÕES
+## CONCLUSÕES
 
 O projeto proposto teve como objetivo principal aplicar técnicas de Processamento Digital de Imagens (PDI) no pré-processamento de imagens de pele para futura utilização em análises baseadas em redes neurais convolucionais (CNNs). Conforme demonstrado ao longo do trabalho, os objetivos definidos na introdução foram alcançados com sucesso.
 
@@ -361,7 +350,7 @@ Assim, o pipeline proposto mostra-se promissor para aplicações que priorizam a
 
 Em síntese, a implementação proposta foi bem-sucedida em atingir os objetivos acadêmicos, demonstrando a viabilidade da combinação de técnicas de pré-processamento de imagens com aprendizado profundo em um contexto de análise de imagens médicas. O projeto também estabelece bases sólidas para futuras extensões, como a utilização de redes mais complexas, ampliação da base de dados e melhorias na avaliação do modelo.
 
-REFERÊNCIAS BIBLIOGRÁFICAS
+## REFERÊNCIAS BIBLIOGRÁFICAS
 
 Guandalini, C. C. V., Silva, L. S. B., Ribeiro, A. C. M., Franceschini, C., Silva, J. P. F. da, Prata, M. C., … Machado, F. L. C. (2024). INTELIGÊNCIA ARTIFICIAL NA DETECÇÃO DE CÂNCER DE PELE: BENEFÍCIOS E DESAFIOS PARA A PRÁTICA DERMATOLÓGICA. Revista Ibero-Americana De Humanidades, Ciências E Educação, 10(12), 14–25. https://doi.org/10.51891/rease.v10i12.17209
 
