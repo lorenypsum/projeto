@@ -13,6 +13,9 @@
 
 * William Fernandes Dias - 11202020043
 
+**Etapa 5-notebook [GitHub]:**  
+https://github.com/lorenypsum/projeto_medivisao
+
 **Backend-notebook [GitHub]:**  
 https://github.com/samyhad/skin_cancer_detection  
 
